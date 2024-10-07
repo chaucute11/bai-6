@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: #87CEC1;
+            padding: 20px;
+        }
+        content{
+            width: 75%;
+            background-color: #C9EBF3;
+            height: 600px;
+            float: left;
+            padding: 20px;
+        }
+        aside{
+            width: 25%;
+            background-color: #F6DAC9;
+            height: 600px;
+            float: right;
+            padding: 20px;
+
+        }
+        .box{
+            width: calc(25% - 7.5px);
+            padding: 20px; 
+            height: 150px;
+            background-color: #D8D3B2;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .clear-both{
+            clear: both;
+        }
+        footer{
+            background-color: #C0A6C1;
+            padding: 20px;
+        }
+        .box:nth-child(4){
+            margin-right: 0;
+        }
+        .div-box{
+            margin-top: 10px;
+        }
+        @media screen and (max-width:768px) {
+            content, aside{
+                width: 100%;
+            }
+            .box{
+                width: calc(50% - 5px);
+            }
+            .box:nth-child(2){
+                margin-right: 0;
+            }
+        }
+        @media screen and (max-width:480px) {
+            .box{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <main>
+        <content>CONTENT</content>
+        <aside>ASIDE</aside>
+    </main>
+    <div class="clear-both"></div>
+    <div class="div-box">
+        <div class="box">BOX 1</div>
+        <div class="box">BOX 2</div>
+        <div class="box">BOX 3</div>
+        <div class="box">BOX 4</div>
+    </div>
+    <div class="clear-both"></div>
+    <footer>FOOTER</footer>
+</body>
+</html>

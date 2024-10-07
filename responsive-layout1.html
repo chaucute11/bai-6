@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: #F97171;
+            height: 100px;
+            padding: 20px;
+        }
+
+        .box {
+            height: 400px;
+            padding: 20px;
+            float: left;
+        }
+
+        .left,
+        .right {
+            width: 25%;
+        }
+
+        .center {
+            background-color: white;
+            width: 50%;
+        }
+
+        .left {
+            background-color: #F5D55F;
+        }
+
+        .right {
+            background-color: #C5ED77;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+
+        footer {
+            background-color: #72C2F1;
+            height: 100px;
+            padding: 20px;
+        }
+
+        @media screen and (max-width:768px) {
+            .center {
+                width: 100%;
+                position: absolute;
+            }
+
+            .box {
+                height: 200px;
+            }
+
+            .left {
+                width: 50%;
+                position: absolute;
+                top: 299px;
+            }
+
+            .right {
+                width: 50%;
+                position: absolute;
+                right: 0;
+                top: 299px;
+            }
+            footer{
+                position: relative;
+                top: 399px;
+            }
+        }
+        @media screen and (max-width:480px) {
+            *{
+                height: 100px !important;
+            }
+            .left{
+                position: relative;
+                width: 100%;
+                top: 100px;
+            }
+            .right{
+            
+                width: 100%;
+                top: 300px;
+            }
+            footer{
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <main>
+        <div class="box left">LEFT</div>
+        <div class="box center">MAIN</div>
+        <div class="box right">RIGHT</div>
+    </main>
+    <div class="clear-both"></div>
+    <footer>FOOTER</footer>
+</body>
+
+</html>

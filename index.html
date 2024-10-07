@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center  ;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .div-header {
+            background-color: #87CEC1;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #C9EBF3;
+            padding: 20px;
+            height: 600px;
+            width: 70%;
+        }
+
+        .aside {
+            background-color: #F6DAC9;
+            padding: 20px;
+            height: 600px;
+            width: 30%;
+        }
+
+        .div-section2 {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div-section2 div {
+            background-color: #D8D3B2;
+            padding: 20px;
+            height: 150px;
+            width: 24%;
+            margin-bottom: 10px;
+        }
+
+        .div-footer {
+            background-color: #C0A6C1;
+            padding: 20px;
+
+        }
+
+        .div-section1{
+            display: flex;
+        }
+        @media screen and (max-width:768px) {
+            .div-section2{
+                flex-wrap: wrap;
+            }
+            .content{
+                width: 100%;
+            }
+            .aside{
+                width: 100%;
+            }
+            .div-section1{
+                flex-wrap: wrap;
+            }
+            .div-section2 div{
+                width: 49%;
+            }
+        }
+        @media screen and (max-width:480px) {
+            .div-section2 div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-header">HEADER</div>
+    <div class="div-section1">
+        <div class="content">CONTENT</div>
+        <div class="aside">ASIDE</div>
+    </div>
+    <div class="clear-both"></div>
+    <div class="div-section2">
+        <div class="box-1">Box 1</div>
+        <div class="box-2">Box 2</div>
+        <div class="box-3">Box 3</div>
+        <div class="box-4">Box 4</div>
+    </div>
+    <div class="clear-both"></div>
+    <div class="div-footer">FOOTER</div>
+</body>
+
+</html>
